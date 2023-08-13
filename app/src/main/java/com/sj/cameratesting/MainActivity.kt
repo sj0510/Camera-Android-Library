@@ -9,14 +9,13 @@ import com.sj.mylibrary.CameraActivity
 import com.sj.mylibrary.DemoActivity
 
 class MainActivity : AppCompatActivity() {
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         val button = findViewById<Button>(R.id.button)
         val button2 = findViewById<Button>(R.id.button2)
+
 
         button.setOnClickListener {
             val intent = Intent(this, CameraActivity::class.java)
